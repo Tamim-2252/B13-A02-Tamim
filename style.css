@@ -32,21 +32,27 @@
     cursor: pointer;
 }
 
+body {
+    background-color: #250D44;
+}
 
 
 /* navbar styles */
 header {
     background-color: #1A0B2E;
+
 }
 header hr {
     max-width: 1600px;
     opacity: 10%;
+    margin: 0 auto;
 }
 .navbar {
     max-width: 1600px;
     justify-content: space-around;
     padding: 22px 0;
     align-items: center;
+    margin: 0 auto;
     
 }
 
@@ -65,19 +71,23 @@ header hr {
     color: white;
 }
 
+.menu {
+    display: none;
+}
+
 /* banner styles */
 .banner {
     background-image: url(./images/hero-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: 100%;
+    width: 100vw;
     height: 760px;
     text-align: center;
     justify-content: center;
     align-items: center;
     max-width: 1600px;
-    /* padding: 101px 0; */
+    margin: 0 auto;
 
 }
 
@@ -344,6 +354,8 @@ footer {
     justify-content: center;
     align-items: center;
     max-width: 1600px;
+    margin: 0 auto;
+    
 }
 .footer-container {
     max-width: 1200px;
@@ -372,4 +384,153 @@ footer {
 
 
 /* responsive styles */
+
+@media screen and (max-width: 576px) {
+
+    /* navbar styles */
+    .nav-link {
+        display: none;
+    }
+    .navbar button {
+        display: none;
+    }
+    .menu {
+        display: initial;
+    }
+    .navbar {
+        justify-content: space-between;
+        padding: 16px 20px;
+    }
+
+    /* banner styles */
+    .banner {
+        background-image: url(./images/small-hero-bg-Image.png);
+        height: 446px;
+        max-width: 100vw;
+    }
+    .hero-img {
+        max-width: 200px;
+        height: 200px;
+    }
+    .microphone {
+        width: 47px;
+        height: 70px;
+    }
+    .banner-text h2 {
+        font-size: 40px;
+    }
+    .banner-container {
+        padding: 40px 0px;
+        margin: 0 auto;
+        max-width: 400px;
+    }
+    .banner-text {
+        padding-top: 24px;
+    }
+
+    /* about-section styles */
+    .about-container {
+        padding-top: 40px;
+    }
+    .about-text {
+        max-width: 100vw;
+        padding: 0 20px;
+        margin: 0 auto;
+    }
+    .about-text h2 {
+        font-size: 32px;
+    }
+    .about-text p {
+        line-height: 20px;
+        padding: 16px 0;
+    }
+    .about-container hr {
+        max-width: 400px;
+        margin: 40px auto;
+    }
+    .merit-comtent {
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding:0 20px 40px;
+        gap: 40px;
+    }
+    .merits h2 {
+        font-size: 40px;
+    }
+
+    /* why choose section */
+    .why-choose {
+        padding: 40px 0;
+    }
+    .why-choose h2 {
+        font-size: 32px;
+        padding-bottom: 16px;
+    }
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+    .why-choose-card {
+        max-width: 100vw;
+        padding: 24px;
+    }
+
+    /* featured & host section */
+
+    .card-host {
+        padding: 40px 0;
+    }
+    .featured-container h2 {
+        font-size: 32px;
+    }
+    .video-card-container {
+        padding: 24px 20px 0;
+        max-width: 100vw;
+        gap: 16px;
+        flex-direction: column;
+    }
+    .host-container {
+        padding: 60px 20px 0;
+    }
+    .host {
+        flex-direction: column;
+        margin: 24px auto 0;
+        max-width: 100vw;
+        padding: 24px;
+        gap: 16px;
+        border-radius: 24px;
+    }
+    .host-info {
+        text-align: center;
+    }
+    .host-icon {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* footer styles */
+    footer {
+        background-image: url(./images/small-footer-Image.png);
+        height: 248px;
+        max-width: 100vw;
+        margin: 0 auto;
+    }
+    .footer-techwave {
+        width: 219px;
+        height: 32px;
+    }
+    .footer-content {
+        width: 255px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        padding: 24px 0;
+        gap: 16px;
+}
+
+}
 

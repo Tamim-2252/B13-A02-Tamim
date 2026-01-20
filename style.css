@@ -290,3 +290,45 @@ header hr {
 .video-time span {
     color: #00FF88;
 }
+
+/* host styles */
+.host-container {
+    /* max-width: 1200px; */
+    padding: 120px 15px 0;
+    color: white;
+}
+.host-container h2 {
+    font-size: 48px;
+    text-align: center;
+}
+.host {
+    margin: 40px auto 0;
+    max-width: 1120px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: rgba(53, 17, 101, 0.4);
+    align-items: center;
+    gap: 24px;
+}
+.host h3 {
+    font-size: 32px;
+}
+.host p {
+    padding: 16px 0;
+    opacity: 60%;
+    line-height: 24px;
+}
+.host-icon {
+    justify-content: flex-start;
+    gap: 8px;
+    border: #533C72;
+}
+.icon-circle {
+    border-radius: 50%;
+    border: 1px solid #533C72;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

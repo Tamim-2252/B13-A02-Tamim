@@ -380,9 +380,11 @@ footer {
     align-items: center;
     gap:9px;
 }
-.footer-container span {
+.footer-container a {
     opacity: 60%;
     font-weight: 500;
+    text-decoration: none;
+    color: white;
 }
 .footer-container p {
     opacity: 60%;
